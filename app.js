@@ -6,10 +6,19 @@
 const express = require('express');
 const app = express();
 const routes = require("./routes/routes")
+const path = require('path')
+
 
 app.get('/', function(req,res){
     res.send("sem nddddd");
 });
+
+console.log(path.join(__dirname, 'views'))
+
+app.use(express.json())
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes)
 

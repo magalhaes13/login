@@ -1,22 +1,71 @@
 const { Router } = require('express')
 const router = Router();
+const mysql = require("../config/bd")
 // import axios from "axios"
 
-router.post('/salvar', async (req, res) => {        //salvar
-    return res.send('telaaaaaaa');
+router.get('/', async(req,res)=>{
+    res.render('login')
+})
+
+router.get('/buscar/:usuario/:senha', async (req, res) => {          //get: buscar  ////  
+                                                                    //async: significa que o valor de retorno da função será, "por baixo dos panos", uma Promise
+    try {                                                           //await: esperar
+        const { usuario, senha } = req.params
+        const data = await mysql.raw(`SELECT * FROM LOGIN WHERE USUARIO = '${usuario}' and SENHA = '${senha}'`)
+        Window.location.href = '/menu'
+        if(data[0].length === 0 )       //length: conta quantas posições tem um array
+        {
+            return res.status(401).send("Usuário não encontrado")    
+        }
+
+        return res.status(200).json(data[0])    
+    }
+    catch(error) {
+        console.log(error)
+        return res.status(500).send("Login inválido")     
+
+    }
 });
 
-router.get('/buscar', async (req, res) => {          //buscar
-    return res.send('123');
-});
 
-router.put('/atualizar/:id', async (req, res) => {       //atualizar
-    return res.send('adasas');
-});
 
-router.delete('/delete/:id', async (req, res) => {    //delete
-    return res.send('sdgdsfg');
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// router.put('/atualizar/:id', async (req, res) => {       //atualizar
+//     return res.send('adasas');
+// });
+
+// router.delete('/delete/:id', async (req, res) => {    //delete
+//     return res.send('sdgdsfg');
+// });
 
 //////////////////////////////////////////////////////////
 //EXEMPLO FRONT
