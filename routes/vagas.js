@@ -3,7 +3,7 @@ const router = Router();
 // import axios from "axios"
 
 router.get('/', async(req,res)=>{
-    res.render('perfil')
+    res.render('vagas')
 })
 
 module.exports = router;

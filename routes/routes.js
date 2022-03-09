@@ -20,7 +20,4 @@ router.use('/vagasAplicadas', VagasAplicadasRouter)
 router.use('/sobre', sobreRouter)
 router.use('/configuracao', ConfiguracaoRouter)
 
-
-
-
 module.exports = router;
