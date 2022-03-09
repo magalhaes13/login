@@ -130,7 +130,10 @@ h1 {
     transition: 0.2s;
 }
 
-
+::-webkit-input-placeholder{                       /* mudar cor da letra */
+    color: rgba(255, 255, 255, 0.534);
+    font-weight: bold;
+  }
 
 
 

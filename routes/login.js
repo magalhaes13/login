@@ -12,13 +12,11 @@ router.get('/buscar/:usuario/:senha', async (req, res) => {          //get: busc
     try {                                                           //await: esperar
         const { usuario, senha } = req.params
         const data = await mysql.raw(`SELECT * FROM LOGIN WHERE USUARIO = '${usuario}' and SENHA = '${senha}'`)
-        Window.location.href = '/menu'
-        if(data[0].length === 0 )       //length: conta quantas posições tem um array
+        if(data[0].length === 0)       //length: conta quantas posições tem um array
         {
             return res.status(401).send("Usuário não encontrado")    
         }
-
-        return res.status(200).json(data[0])    
+        return res.status(200).json(data[0])  
     }
     catch(error) {
         console.log(error)

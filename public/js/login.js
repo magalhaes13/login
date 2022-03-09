@@ -6,10 +6,15 @@ document.getElementById('botaoSalvar').addEventListener('click', async (e) => {
         const usuario = document.getElementById('usuario').value
         const senha = document.getElementById('senha').value
         
-        const data = await axios.get(`buscar/${usuario}/${senha}`)
+        if(usuario === "" || senha===""){
+            return alert("Preencha usuário e senha");
+        }
+
+        const data = await axios.get(`/login/buscar/${usuario}/${senha}`)
         console.log(data)
         
         console.log(usuario,senha)
+        window.location.href = '/menu'
     }
 
     catch(error){

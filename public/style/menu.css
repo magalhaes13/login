@@ -102,16 +102,11 @@ label #sidebar_btn:hover{
     margin-left: 170px;
     width: 80px;
 }
-.content{
-    background: url(https://www.kmax.com.br/img/banner2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    transition: 0.5s;
-}
+
 #check:checked ~ .content{
     margin-left: 60px;
 }
 #check{
     display: none;
 }
+
