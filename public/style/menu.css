@@ -7,10 +7,10 @@
 }
 header{
     position: fixed;
-    background: #1f026e;
-    padding: 20px;
+    background: #000000;
+    padding: 15px;
     width: 100%;
-    height: 30px;
+    /* height: 30px; */
 }
 .left h3{
     color: #fff;
@@ -24,7 +24,7 @@ header{
 }
 .sair_btn{
     padding: 5px;
-    background: #3804afb2;
+    background: #ec5b51be;
     text-decoration: none;
     float: right;
     margin-top: -30px;
@@ -35,9 +35,10 @@ header{
     color: rgb(235, 235, 235);
     transition: 0.5s;
     transition-property: background;
+    cursor: pointer;
 }
 .sair_btn:hover{
-    background: #080808c9;
+    background: #ec5b51;
 }
 .sidebar{
     position: fixed;
@@ -46,7 +47,7 @@ header{
     margin-top: 70px;
     padding-top: 30px;
     left: 0;
-    background: #1f026ea2;
+    background: #302e2e;
     transition: 0.5s;
     transition-property: left;
 }
