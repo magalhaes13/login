@@ -21,15 +21,15 @@
                 <div class="form">
                     <form method="post" action="index.php"><br>
                       <h1>Perfil</h1><br>
-                      <h2>Seus dados</h2><br><br>
+                      <h2>Seus dados</h2><br>
                       <label>Nome:</label>
                       <input type="text" size="50" placeholder="Nome Completo">
-                      <label>CPF:</label>
+                      <label>CPF*:</label>
                       <input type="text" id="cpf" minlength="11" maxlength="11" 
                        required autocomplete="off" placeholder="123.456.789-00"><br><br>
-                      <label>Email:</label>
+                      <label>Email*:</label>
                       <input type="email" size="40" placeholder="Email Válido" required>
-                      <label>RG:</label>
+                      <label>RG*:</label>
                       <input type="text" id="rg" minlength="11" maxlength="11"
                       pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
                       required autocomplete="off" placeholder="147.147.147-00"><br><br>
@@ -42,15 +42,15 @@
                       <input type="radio" name="opcao" id="op3"><br><br>
                       <label>Data de Nascimento:</label>
                       <input type="date" name="data" id="data"><br><br>
-                        <label for="cep">CEP</label>
+                        <label for="cep">CEP*:</label>
                         <input id="cep" type="text" required/>
-                        <label for="logradouro">Logradouro</label>
-                        <input id="logradouro" type="text" required/>
-                        <label for="numero">Número</label>
-                        <input id="numero" type="text" />
-                        <label for="bairro">Bairro</label>
+                        <label for="logradouro">Logradouro:</label>
+                        <input id="logradouro" type="text" size="30" required/>
+                        <label for="numero">Número:</label>
+                        <input id="numero" type="text" size="1" /><br><br>
+                        <label for="bairro">Bairro:</label> 
                         <input id="bairro" type="text" required/>
-                        <label for="uf">Estado</label>
+                        <label for="uf">Estado:</label>
                         <select id="uf">
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -82,22 +82,22 @@
                         </select>
                         <label>Complemento:</label>
                         <input type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
-                        <h2>Curriculo</h2>
-                <form method="post" id="fileArq" enctype="multipart/form-data" action="/upload">
-                    <input type="file" name="file" >
-                    <input type="submit" value="Enviar">
                         <div class="bntFormSave">
-                            <input id="enviar" type="submit" value="Enviar">
+                            <input id="enviar" type="submit" value="Salvar">
                             <input type="button"  value="Voltar">
                         </div>
                       </form>
+                      <br>
+                      <h4>Curriculo</h4>
+                      <form method="post" id="fileArq" enctype="multipart/form-data" action="/upload">
+                          <input type="file" name="file">
+                          <input type="submit" value="Enviar">
                     </div>
                 </form>
               </div> 
            </div>
        </div>
     </div>
-
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	

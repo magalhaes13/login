@@ -67,8 +67,9 @@ input,select{
 	height: 30px;
 	border: none;
 	margin: 5px;
+	padding-left: 10px;
 }
-input[type="radio"]{
+ input[type="radio"]{    /*sexo */
 	height: 12px;
 }
 input[type="submit"]{
@@ -77,6 +78,7 @@ input[type="submit"]{
 	border: none;
 	width: 80px;
 	height: 35px;
+	padding-left: 4px;
 }
 input[type="button"]{
 	cursor: pointer;
@@ -84,13 +86,14 @@ input[type="button"]{
 	border: none;
 	width: 80px;
 	height: 35px;
+	padding-left: 4px;
 }
 input[type="submit"]:hover{
 	background: #069;
 	color: #fff;
 }
 input[type="button"]:hover{
-	background: #069;
+	background: rgb(153, 0, 0);
 	color: #fff;
 }
 @media (max-width: 680px) {
@@ -100,11 +103,11 @@ input[type="button"]:hover{
 	align-items: center;
 	width: 80%;
 	height: auto;
-	margin-top: 0  ;
+	margin-top: 0;
 	}
     
 	input, label{ 
-	margin: 5px;
+	margin: 50px;
 	}   
 }
 
