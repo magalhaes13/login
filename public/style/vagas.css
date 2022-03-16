@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+.containerGeral{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.conteinarPerfil{
+    height: 100%;
+    width: 82.5%;
+    /* background-color: blue; */
+}
+
+.texto{
+    margin-top: 8.5%;
+    
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+} 
+body{
+	/*caso  a imagem não funcione colocamos uma cor */
+	background-color: rgba(235, 8, 8, 0);
+	background-image: url("https://i.ytimg.com/vi/Jox6R5-rIH0/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	width: 100%; 
+}
+.form{
+	overflow: hidden;
+	background:#8a93ade1;
+	width: 98%;
+	height: 10%;
+	margin:20px auto;
+	text-align: center;
+	border: 2px solid rgba(0, 12, 17, 0.301);
+	border-radius: 10px;
+}
+h1{
+	background: rgba(30, 80, 105, 0.644);
+}
+
+/* h2{
+	background: #8a93ade1;
+}
+
+#fileArq{
+    background-color: #8a93ade1;
+} */
+
+
+input,select{
+	border-radius: 0px;
+	height: 30px;
+	border: none;
+	margin: 5px;
+	padding-left: 10px;
+}
+ input[type="radio"]{    /*sexo */
+	height: 12px;
+}
+input[type="submit"]{
+	cursor: pointer;
+	border-radius: 0px;
+	border: none;
+	width: 80px;
+	height: 35px;
+	padding-left: 4px;
+}
+input[type="button"]{
+	cursor: pointer;
+	border-radius: 0px;
+	border: none;
+	width: 80px;
+	height: 35px;
+	padding-left: 4px;
+}
+input[type="submit"]:hover{
+	background: #069;
+	color: #fff;
+}
+input[type="button"]:hover{
+	background: rgb(153, 0, 0);
+	color: #fff;
+}
+@media (max-width: 680px) {
+	.form { 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin-top: 0;
+	}
+    
+	input, label{ 
+	margin: 50px;
+	}   
+}
+
+.bntFormSave{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
