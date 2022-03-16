@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/style/vagas.css">
+    <link rel="stylesheet" type="text/css" href="/style/perfil.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <meta charset="utf-8"> 
-    <title>Login</title>
+    <title>Perfil</title>
 </head>
 <body>
+<<<<<<< HEAD
     <body>
         <div class="ate">
             <%- include('components/sidebar'); %>
@@ -28,11 +29,48 @@
                    </div>
                </div>
             </div>
+=======
 
-       
+    <div class="ate">
+    <%- include('components/sidebar'); %>
+
+       <div class="containerGeral">
+           <div class="conteinarPerfil">
+              <div class="texto">
+                  
+                <div class="form">
+                    <form method="post" action="index.php"><br>
+                      <h1>Perfil</h1><br>
+                      <h2>Seus dados</h2><br>
+                      <label>Nome:</label>
+                      <input type="text" size="50" placeholder="Nome Completo">
+                        <label>Complemento:</label>
+                        <input type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
+                        <div class="bntFormSave">
+                            <input id="enviar" type="submit" value="Salvar">
+                            <input type="button"  value="Voltar">
+                        </div>
+                      </form>
+                      <br>
+                      <h4>Curriculo</h4>
+                      <form method="post" id="fileArq" enctype="multipart/form-data" action="/upload">
+                          <input type="file" name="file">
+                          <input type="submit" value="Enviar">
+                    </div>
+                </form>
+              </div> 
+           </div>
+       </div>
+    </div>
+
+   
+
+
+>>>>>>> 7f7d03da1498c25438cf204d485ebcc5c5875c4e
+
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/js/vagas.js"></script>
+    <script src="/js/perfil.js"></script>
 
 </body>
 </html>

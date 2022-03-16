@@ -52,3 +52,70 @@ body{
 h1{
 	background: rgba(30, 80, 105, 0.644);
 }
+<<<<<<< HEAD
+=======
+
+/* h2{
+	background: #8a93ade1;
+}
+
+#fileArq{
+    background-color: #8a93ade1;
+} */
+
+
+input,select{
+	border-radius: 0px;
+	height: 30px;
+	border: none;
+	margin: 5px;
+	padding-left: 10px;
+}
+ input[type="radio"]{    /*sexo */
+	height: 12px;
+}
+input[type="submit"]{
+	cursor: pointer;
+	border-radius: 0px;
+	border: none;
+	width: 80px;
+	height: 35px;
+	padding-left: 4px;
+}
+input[type="button"]{
+	cursor: pointer;
+	border-radius: 0px;
+	border: none;
+	width: 80px;
+	height: 35px;
+	padding-left: 4px;
+}
+input[type="submit"]:hover{
+	background: #069;
+	color: #fff;
+}
+input[type="button"]:hover{
+	background: rgb(153, 0, 0);
+	color: #fff;
+}
+@media (max-width: 680px) {
+	.form { 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin-top: 0;
+	}
+    
+	input, label{ 
+	margin: 50px;
+	}   
+}
+
+.bntFormSave{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+>>>>>>> 7f7d03da1498c25438cf204d485ebcc5c5875c4e
