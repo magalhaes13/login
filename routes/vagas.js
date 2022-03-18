@@ -11,7 +11,7 @@ router.get('/', async(req,res)=>{
 router.get('/vagas', async (req, res) => {          //get: buscar  ////  
                                                                     //async: significa que o valor de retorno da função será, "por baixo dos panos", uma Promise
     try {                                                           //await: esperar
-        const { usuario, senha } = res.params
+        const { ID_VAGAS} = res.params
         const data = await mysql.raw(`SELECT * FROM VAGAS WHERE ID_VAGAS = '${ID_VAGAS}'`)
     }
     catch(error) {
@@ -22,10 +22,12 @@ router.get('/vagas', async (req, res) => {          //get: buscar  ////
 });
 
 
-router.get('/busca/total', async (req,res ) =>{
+// router.get('/busca/total', async (req,res ) =>{
 
 
-})
+
+
+// })
 
 
 module.exports = router;
