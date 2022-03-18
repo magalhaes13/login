@@ -1,4 +1,5 @@
-const { Router } = require('express')
+const { Router } = require('express');
+const { route } = require('express/lib/application');
 const router = Router();
 const mysql = require("../config/bd")
 // import axios from "axios"
@@ -19,5 +20,12 @@ router.get('/vagas', async (req, res) => {          //get: buscar  ////
 
     }
 });
+
+
+router.get('/busca/total', async (req,res ) =>{
+
+
+})
+
 
 module.exports = router;

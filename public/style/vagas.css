@@ -6,9 +6,9 @@
     width: 100%;
     height: 100vh;
     background-image: url("https://i.ytimg.com/vi/Jox6R5-rIH0/maxresdefault.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
   }
   
   .conteinarPerfil{
@@ -18,10 +18,12 @@
   }
 
   .conteinarPerfil2{
-	width: 100%;
-    height: 100vh;
+    height: 0%;
+    width: 81.7;
     /* background-color: blue; */
   }
+
+
   
   .texto{
     margin-top: 10%;
