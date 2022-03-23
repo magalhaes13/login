@@ -1,96 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="/style/vagas.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <meta charset="utf-8"> 
-    <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/style/vagas.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Login</title>
 </head>
+
 <body>
-   
 
-    <div class="ate">
-        <%- include('components/sidebar'); %>
-    
-           <div class="containerGeral">
-               <div class="conteinarPerfil">
-    
-                  <div class="texto">
-                    <div class="row">
-                      <div class="card green">
-                        <h2>vaga 1</h2>
-                        <p>Aguardando os recrutadores</p>
-                        <img class="icon" src="assets/bandeira-brasil-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="certo" />
-                      </div>
-                 
-                      <div class="card green">
-                        <h2>vaga 2</h2>
-                        <p>Aguardando os recrutadores</p>
-                        <img class="icon" src="assets/bandeira-portugal-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="aguardando" />
-                      </div>
-                 
-                      <div class="card green">
-                        <h2>vaga 3</h2>
-                        <p>Aguardando os recrutadores</p>
-                        <img class="icon" src="assets/bandeira-portugal-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="finalizados" />
-                      </div>
 
-                      <div class="card green">
-                        <h2>vaga 4</h2>
-                        <p>Você foi rejeitado novamente</p>
-                        <img class="icon" src="assets/bandeira-portugal-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="finalizados" />
-                      </div>
-                      <div class="card green">
-                        <h2>vaga 5</h2>
-                        <p>Você foi rejeitado novamente</p>
-                        <img class="icon" src="assets/bandeira-brasil-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="finalizados" />
-                      </div>
-                    </div>
-                </div>
+  <div class="ate">
+    <%- include('components/sidebar'); %>
 
-                <div class="conteinarPerfil2">
+      <div class="containerGeral">
+        <div class="conteinarPerfil">
+          <div id="texto" class="texto">
 
-                    <div class="texto">
-                        <div class="row">
-                          <div class="card green">
-                            <h2>vaga 6</h2>
-                            <p>Aguardando os recrutadores</p>
-                            <img class="icon" src="assets/bandeira-brasil-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="certo" />
-                          </div>
-                     
-                          <div class="card green">
-                            <h2>vaga 7</h2>
-                            <p>Aguardando os recrutadores</p>
-                            <img class="icon" src="assets/bandeira-brasil-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="aguardando" />
-                          </div>
-                     
-                          <div class="card green">
-                            <h2>vaga 8</h2>
-                            <p>Você foi rejeitado novamente</p>
-                            <img class="icon" src="assets/bandeira-brasil-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="finalizados" />
-                          </div>
-    
-                          <div class="card green">
-                            <h2>vaga 9</h2>
-                            <p>Você foi rejeitado novamente</p>
-                            <img class="icon" src="assets/bandeira-portugal-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="finalizados" />
-                          </div>
-                          <div class="card green">
-                            <h2>vaga 10</h2>
-                            <p>Você foi rejeitado novamente</p>
-                            <img class="icon" src="assets/bandeira-brasil-redonda-png-Fundo-transparente-gratis-removebg-preview.png" alt="finalizados" />
-                          </div>
-
-                        </div>          
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </body>
+      </div>
+  </div>
+</body>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/vagas.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/js/vagasAplicadas.js"></script>
 
 </body>
+
 </html>

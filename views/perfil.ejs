@@ -20,38 +20,39 @@
                   
                 <div class="form">
                     <form method="post" action="index.php"><br>
+                    <input id="idPerfil" value="1313" hidden> 
                       <h1>Perfil</h1><br>
                       <h2>Seus dados</h2><br>
                       <label>Nome:</label>
-                      <input type="text" size="50" placeholder="Nome Completo">
+                      <input class="dadosPerfil" type="text" size="50" placeholder="Nome Completo">
                       <label>CPF*:</label>
-                      <input type="text" id="cpf" minlength="11" maxlength="11" 
+                      <input class="dadosPerfil" type="text" id="cpf" minlength="11" maxlength="11" 
                        required autocomplete="off" placeholder="123.456.789-00"><br><br>
                       <label>Email*:</label>
-                      <input type="email" size="40" placeholder="Email Válido" required>
+                      <input class="dadosPerfil" type="email" size="40" placeholder="Email Válido" required>
                       <label>RG*:</label>
-                      <input type="text" id="rg" minlength="11" maxlength="11"
+                      <input class="dadosPerfil" type="text" id="rg" minlength="11" maxlength="11"
                       pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
                       required autocomplete="off" placeholder="147.147.147-00"><br><br>
                       <label>Sexo:</label> &nbsp;
                       <label>Masculino</label>
-                      <input type="radio" name="opcao" id="op1">&nbsp;
+                      <input class="dadosPerfil" type="radio" name="opcao" id="op1">&nbsp;
                       <label>Feminino</label>
-                      <input type="radio" name="opcao" id="op2">&nbsp;
+                      <input class="dadosPerfil" type="radio" name="opcao" id="op2">&nbsp;
                       <label>Outros</label>
-                      <input type="radio" name="opcao" id="op3"><br><br>
+                      <input class="dadosPerfil" type="radio" name="opcao" id="op3"><br><br>
                       <label>Data de Nascimento:</label>
-                      <input type="date" name="data" id="data"><br><br>
+                      <input class="dadosPerfil" type="date" name="data" id="data"><br><br>
                         <label for="cep">CEP*:</label>
-                        <input id="cep" type="text" required/>
+                        <input class="dadosPerfil" id="cep" type="text" required/>
                         <label for="logradouro">Logradouro:</label>
-                        <input id="logradouro" type="text" size="30" required/>
+                        <input class="dadosPerfil" id="logradouro" type="text" size="30" required/>
                         <label for="numero">Número:</label>
-                        <input id="numero" type="text" size="1" /><br><br>
+                        <input class="dadosPerfil" id="numero" type="text" size="1" /><br><br>
                         <label for="bairro">Bairro:</label> 
-                        <input id="bairro" type="text" required/>
+                        <input class="dadosPerfil" id="bairro" type="text" required/>
                         <label for="uf">Estado:</label>
-                        <select id="uf">
+                        <select class="dadosPerfil" id="uf">
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -81,7 +82,7 @@
                             <option value="TO">Tocantins</option>
                         </select>
                         <label>Complemento:</label>
-                        <input type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
+                        <input class="dadosPerfil" type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
                         <div class="bntFormSave">
                             <input id="enviar" type="submit" value="Salvar">
                             <input type="button"  value="Voltar">
