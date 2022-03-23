@@ -91,7 +91,7 @@ input[type="submit"]:hover{
 	color: #fff;
 }
 input[type="button"]:hover{
-	background: rgb(153, 0, 0);
+	background: rgb(216, 141, 3);
 	color: #fff;
 }
 @media (max-width: 680px) {

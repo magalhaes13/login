@@ -20,7 +20,7 @@
                   
                 <div class="form">
                     <form method="post" action="index.php"><br>
-                    <input id="idPerfil" value="1313" hidden> 
+                    <input id="idPerfil" value="" hidden> 
                       <h1>Perfil</h1><br>
                       <h2>Seus dados</h2><br>
                       <label>Nome:</label>
@@ -85,7 +85,7 @@
                         <input class="dadosPerfil" type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
                         <div class="bntFormSave">
                             <input id="enviar" type="submit" value="Salvar">
-                            <input type="button"  value="Voltar">
+                            <input type="button" onclick="alert(idPerfil.value)" value="Editar">
                         </div>
                       </form>
                       <br>
