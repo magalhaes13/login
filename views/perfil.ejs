@@ -24,23 +24,23 @@
                       <h1>Perfil</h1><br>
                       <h2>Seus dados</h2><br>
                       <label>Nome:</label>
-                      <input class="dadosPerfil" type="text" size="50" placeholder="Nome Completo">
+                      <input class="dadosPerfil" id="nomeCompleto" type="text" size="50" placeholder="Nome Completo">
                       <label>CPF*:</label>
                       <input class="dadosPerfil" type="text" id="cpf" minlength="11" maxlength="11" 
                        required autocomplete="off" placeholder="123.456.789-00"><br><br>
                       <label>Email*:</label>
-                      <input class="dadosPerfil" type="email" size="40" placeholder="Email Válido" required>
+                      <input class="dadosPerfil" id="email" type="email" size="40" placeholder="Email Válido" required>
                       <label>RG*:</label>
                       <input class="dadosPerfil" type="text" id="rg" minlength="11" maxlength="11"
                       pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
                       required autocomplete="off" placeholder="147.147.147-00"><br><br>
                       <label>Sexo:</label> &nbsp;
                       <label>Masculino</label>
-                      <input class="dadosPerfil" type="radio" name="opcao" id="op1">&nbsp;
+                      <input class="dadosPerfil" type="radio" onchange="getValueRadio()" name="opcao" id="op1" value="MASCULINO">&nbsp;
                       <label>Feminino</label>
-                      <input class="dadosPerfil" type="radio" name="opcao" id="op2">&nbsp;
+                      <input class="dadosPerfil" type="radio" onchange="getValueRadio()" name="opcao" id="op2" value="FEMININO">&nbsp;
                       <label>Outros</label>
-                      <input class="dadosPerfil" type="radio" name="opcao" id="op3"><br><br>
+                      <input class="dadosPerfil" type="radio" onchange="getValueRadio()" name="opcao" id="op3" value="OUTROS"><br><br>
                       <label>Data de Nascimento:</label>
                       <input class="dadosPerfil" type="date" name="data" id="data"><br><br>
                         <label for="cep">CEP*:</label>
@@ -82,9 +82,9 @@
                             <option value="TO">Tocantins</option>
                         </select>
                         <label>Complemento:</label>
-                        <input class="dadosPerfil" type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
+                        <input class="dadosPerfil" id="complemento" type="text" size="30" placeholder="Andar, Apartamento,Bloco"><br><br>
                         <div class="bntFormSave">
-                            <input id="enviar" type="submit" value="Salvar">
+                            <input id="enviar" type="submit" value="Salvar" onclick="savePerfil()">
                             <input type="button" onclick="alert(idPerfil.value)" value="Editar">
                         </div>
                       </form>
@@ -108,7 +108,7 @@
 			$.ajax({
 				//O campo URL diz o caminho de onde virá os dados
 				//É importante concatenar o valor digitado no CEP
-				url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+				url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/',
 				//Aqui você deve preencher o tipo de dados que será lido,
 				//no caso, estamos lendo JSON.
 				dataType: 'json',
