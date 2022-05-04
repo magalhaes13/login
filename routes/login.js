@@ -11,7 +11,7 @@ router.get('/buscar/:usuario/:senha', async (req, res) => {          //get: busc
                                                                     //async: significa que o valor de retorno da função será, "por baixo dos panos", uma Promise
     try {                                                           //await: esperar
         const { usuario, senha } = req.params
-        const data = await mysql.raw(`SELECT * FROM USUARIO WHERE USUARIO = '${usuario}' and SENHA = '${senha}'`)
+        const data = await mysql.raw(`SELECT * FROM LOGIN WHERE USUARIO = '${usuario}' and SENHA = '${senha}'`)
         if(data[0].length === 0)       //length: conta quantas posições tem um array
         {
             return res.status(401).send("Usuário não encontrado")
